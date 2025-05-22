@@ -10,7 +10,7 @@ def load_model():
     return tf.keras.models.load_model('fruit_classifier_model.keras')
 
 model = load_model()
-class_names = ['Apple', 'Grapes', 'Orange', 'Pineapple', 'Strawberry']
+class_names = ['Apple', 'Grapes', 'Orange', 'Pineapple', 'Strawberry', 'Cherry', 'Coconut', 'Banana', 'Eggplant', 'Lemon']
 
 st.title("🍌Fruit Image Classifier")
 st.write("Upload an image to classify the fruit.")
@@ -51,3 +51,13 @@ else:
         st.info("🍊 An orange a day, keeps the doctor away.")
     elif predicted_class == 'Strawberry':
         st.info("🍓 A strawberry a day, keeps the doctor away.")
+    elif predicted_class == 'Cherry':
+        st.info("🍒 A cherry a day, keeps the doctor away.")
+    elif predicted_class == 'Coconut':
+        st.info("🥥 A coconut a day, keeps the doctor away.")
+    elif predicted_class == 'Banana':
+        st.info("🍌 A banana a day, keeps the doctor away.")
+    elif predicted_class == 'Eggplant':
+        st.info("🍆 An eggplant a day, keeps the doctor away.")
+    elif predicted_class == 'Lemon':
+        st.info("🍋 A lemon a day, keeps the doctor away.")
